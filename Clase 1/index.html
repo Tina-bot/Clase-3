@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Lorem ipsum dolor sit amet">
     <title>Base de Datos | EmpresaPrueba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,54 +26,56 @@
         </nav>
     </header>
     <main>
-        <section class="user_list_section" id="list">
-            <h1>Bienvenido, {user_name} 👋</h1>
-            <h2><i>Listado de Proovedores</i></h2>
-            <table>
-                <thead>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Rubro</th>
-                    <th scope="col">Telefono</th>
-                    <th scope="col">Email</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lorem</td>
-                        <td>Insumos</td>
-                        <td>123-456</td>
-                        <td>lorem12@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Ipsum</td>
-                        <td>Vendedor</td>
-                        <td>425-496</td>
-                        <td>Ipsumo@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="register_section" id="register">
-            <h2><i>Registrar Nuevo</i></h2>
-            <form action="" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingresar el nombre" required>
-                </br>
-                <label for="rubro">Rubro</label>
-                <select>
-                    <option value="vendedor">Vendedor</option>
-                    <option value="insumos" selected>Insumos</option>
-                </select>
-                </br>
-                <label for="phone">Telefono</label>
-                <input type="tel" name="phone" id="phone" placeholder="Ingresar el telefono" required>
-                </br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Ingresar el email" required>
-                </br>
-                <button type="submit">Registrar</button>
-            </form>
-        </section>
+        <h1>Bienvenido, {user_name} 👋</h1>
+        <div class="user_pannel">
+            <section class="user_list_section" id="list">
+                <h2><i>Listado de Proovedores</i></h2>
+                <table>
+                    <thead>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Rubro</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Email</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>Insumos</td>
+                            <td>123-456</td>
+                            <td>lorem12@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ipsum</td>
+                            <td>Vendedor</td>
+                            <td>425-496</td>
+                            <td>Ipsumo@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="register_section" id="register">
+                <h2><i>Registrar Nuevo</i></h2>
+                <form action="" method="POST">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ingresar el nombre" required>
+                    </br>
+                    <label for="rubro">Rubro</label>
+                    <select>
+                        <option value="vendedor">Vendedor</option>
+                        <option value="insumos" selected>Insumos</option>
+                    </select>
+                    </br>
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Ingresar el telefono" required>
+                    </br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresar el email" required>
+                    </br>
+                    <button type="submit">Registrar</button>
+                </form>
+            </section>
 
+        </div>
         <article id="data">
             <h3> <u> Datos de la empresa: </u></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta porro recusandae voluptates expedita
@@ -92,9 +99,6 @@
                 Ipsa, voluptas earum. Dolorem deserunt fugit nostrum quisquam labore veniam ratione rerum cum temporibus
                 nihil vero qui porro saepe repellendus ea distinctio libero, at obcaecati earum eveniet laudantium
                 doloremque ex.
-                Esse eligendi incidunt eveniet iste excepturi, amet iure libero. In incidunt nesciunt iusto illum
-                obcaecati eius aspernatur, eos soluta accusantium quas dolore corporis cumque provident suscipit
-                inventore officiis error magni?
                 Natus exercitationem nostrum dolor ad ullam aspernatur animi culpa fugit! Impedit blanditiis delectus
                 quas amet excepturi sequi est suscipit cupiditate nesciunt sed vero illum minus quaerat ipsam quae, at
                 placeat?
