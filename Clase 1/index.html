@@ -4,39 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Lorem ipsum dolor sit amet">
+    <meta name="description" content="Base de datos de finanzas para Empresas">
     <title>Base de Datos | EmpresaPrueba</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <span class="icon">⭐️</span>
             <ul>
-                <li> <a href="#">Home </a></li>
-                <li> <a href="#list"> Lista </a></li>
-                <li> <a href="#register"> Registro </a></li>
-                <li> <a href="#data"> Datos </a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Detalles de Proveedores</a></li>
+                <li><a href="#">Detalles de Empresa</a></li>
+                <li><a href="#">Reportes Analiticos</a></li>
             </ul>
+
+
+            <div class="nav-bottom">
+                <span class="icon">💬</span>
+                <a href="#contact">Soporte</a>
+                <span class="icon">🚪</span>
+                <a href="#logout">Cerrar Sesión</a>
+                <span class="icon">👋</span>
+                <a href="#login">Iniciar Sesión</a>
+            </div>
         </nav>
     </header>
     <main>
         <h1>Bienvenido, {user_name} 👋</h1>
-        <div class="user_pannel">
-            <section class="user_list_section" id="list">
-                <h2><i>Listado de Proovedores</i></h2>
-                <table>
+        <section class="user_pannel">
+            <article class="user_list_section" id="list">
+                <h2>Listado de Proveedores</h2>
+                <table aria-label="Lista de proveedores">
                     <thead>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Rubro</th>
-                        <th scope="col">Telefono</th>
-                        <th scope="col">Email</th>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Rubro</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Pago Pendiente</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -44,82 +54,57 @@
                             <td>Insumos</td>
                             <td>123-456</td>
                             <td>lorem12@gmail.com</td>
+                            <td>No</td>
                         </tr>
                         <tr>
                             <td>Ipsum</td>
                             <td>Vendedor</td>
                             <td>425-496</td>
-                            <td>Ipsumo@gmail.com</td>
+                            <td>ipsumo@gmail.com</td>
+                            <td>$224.500</td>
+                        </tr>
+                        <tr>
+                            <td>Dolor</td>
+                            <td>Insumos</td>
+                            <td>123-456</td>
+                            <td>dplor@gmail.com</td>
+                            <td>$10.400</td>
                         </tr>
                     </tbody>
                 </table>
-            </section>
-            <section class="register_section" id="register">
-                <h2><i>Registrar Nuevo</i></h2>
-                <form action="" method="POST">
+            </article>
+            <article class="register_section" id="register">
+                <h2>Registrar Nuevo Proveedor</h2>
+                <!--TODO: faltan estilos todavia al form -->
+                <form action="#" method="POST" aria-label="Formulario de Registro">
                     <label for="name">Nombre</label>
                     <input type="text" name="name" id="name" placeholder="Ingresar el nombre" required>
-                    </br>
                     <label for="rubro">Rubro</label>
-                    <select>
+                    <select name="rubro" id="rubro">
                         <option value="vendedor">Vendedor</option>
                         <option value="insumos" selected>Insumos</option>
                     </select>
-                    </br>
                     <label for="phone">Telefono</label>
                     <input type="tel" name="phone" id="phone" placeholder="Ingresar el telefono" required>
-                    </br>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Ingresar el email" required>
-                    </br>
                     <button type="submit">Registrar</button>
                 </form>
-            </section>
-
-        </div>
-        <article id="data">
-            <h3> <u> Datos de la empresa: </u></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta porro recusandae voluptates expedita
-                necessitatibus coum, aut quo consequuntur veritatis, itaque architecto vitae saepe doloremque ullam illo
-                ea consectetur esse ipsam?
-                Perspiciatis, vitae fuga? Dignissimos, pariatur aspernatur temporibus dolore debitis, quos nam repellat
-                suscipit mollitia quidem, facere doloribus nesciunt id recusandae eos modi incidunt numquam dolor quis
-                ullam perferendis. Laborum, corporis.
-                Dolorem recusandae omnis unde labore laboriosam deserunt exercitationem commodi consectetur placeat
-                iure, sapiente ut nam assumenda beatae maiores eveniet necessitatibus voluptates eum dolore odio veniam
-                repudiandae perferendis facilis! Deserunt, accusamus!
-                Obcaecati aliquid quidem optio odio esse, iste deserunt culpa adipisci dicta, porro recusandae
-                blanditiis! Illo culpa architecto numquam aut similique autem sit a corrupti, porro excepturi esse quod
-                cum necessitatibus.
-                Consequatur, voluptatem doloribus. Quis enim eius corrupti earum nulla. Repellendus vero saepe, eius
-                voluptas impedit illum excepturi exercitationem ullam hic fugiat maiores dolor asperiores ad deserunt
-                suscipit quibusdam nulla et?
-                Voluptatem nam quo iste perspiciatis doloremque, vel maiores! Officia sint nesciunt, fugit perspiciatis
-                dicta labore debitis accusantium alias rem vel dolorem placeat eos repellendus excepturi ad pariatur
-                corporis nulla sequi?
-                Ipsa, voluptas earum. Dolorem deserunt fugit nostrum quisquam labore veniam ratione rerum cum temporibus
-                nihil vero qui porro saepe repellendus ea distinctio libero, at obcaecati earum eveniet laudantium
-                doloremque ex.
-                Natus exercitationem nostrum dolor ad ullam aspernatur animi culpa fugit! Impedit blanditiis delectus
-                quas amet excepturi sequi est suscipit cupiditate nesciunt sed vero illum minus quaerat ipsam quae, at
-                placeat?
-                Vel excepturi in natus reprehenderit aspernatur ipsa possimus aut impedit ipsam asperiores provident
-                vero, culpa quam pariatur? In dolorem quidem quae officia beatae perferendis totam, impedit aperiam
-                harum. Eveniet, laborum..</p>
-            Total: $<i>234904</i>
-            <br>
+            </article>
+        </section>
+        <section id="data" class="company_data">
+            <h3>Datos de la Empresa</h3>
+            <p>Lorem ipsum dolor sit amet...</p>
+            <p>Total: $<i>234.900</i></p>
             <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg"
-                alt="mesa larga de oficina con computadoras encima y alrededor personas charlando entre si en una oficina"
-                width="300px" height="200px">
-            <hr>
-            </div>
-
-            <footer>
-                <small>Todos los derechos reservados</small>
-                <small> <b> © Copyright 2024</b> </small>
-            </footer>
-        </article>
+                alt="mesa larga de oficina con computadoras y alrededor personas charlando entre si en una oficina"
+                width="400px" height="250px">
+        </section>
+        <!-- TODO: agregar graficos circulares para representacion de los datos -->
     </main>
+    <footer>
+        <small>© 2024 EmpresaPrueba. Todos los derechos reservados.</small>
+    </footer>
 </body>
 
 </html>
