@@ -96,8 +96,9 @@
                         <option value="vendedor">Vendedor</option>
                         <option value="insumos" selected>Insumos</option>
                     </select>
-                    <label for="phone">Telefono</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Ingresar el telefono" required>
+                    <label for="phone">Telefono
+                    <small><i>(4xxx-xxxx)</i></small></label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{4}" placeholder="Ingresar el telefono" required>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Ingresar el email" required>
                     <button type="submit">Registrar</button>
