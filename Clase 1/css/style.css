@@ -44,6 +44,7 @@ nav a {
     text-align: center;
     font-weight: bold;
 }
+
 nav a:hover {
     color: #88bfff;
     background-color: #ffffffc5;
@@ -54,11 +55,25 @@ nav a:hover {
 
 .nav-bottom {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-    padding-bottom: 16px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    width: 100%;
 }
+
+.nav-bottom .menu-item{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-bottom .icon {
+    font-size: 12px;
+}
+
 
 main {
     margin-left: 220px;
@@ -66,7 +81,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    
+
 }
 
 .user_pannel {
@@ -102,7 +117,7 @@ footer {
     padding: 16px;
     background-color: #88bfffa6;
     width: 100%;
-    z-index: 0  ;
+    z-index: 0;
 }
 
 /*TODO: falta estilos al form*/
@@ -122,10 +137,12 @@ form {
     nav {
         display: none;
     }
+
     main {
         margin-left: 0px;
         padding: 24px;
     }
+
     .user_pannel {
         flex-direction: column;
         gap: 32px;
