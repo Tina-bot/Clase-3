@@ -38,13 +38,12 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #2c2c2cc9;
+    color: #FFFFFF;
     padding: 8px;
     display: block;
     text-align: center;
     font-weight: bold;
 }
-
 nav a:hover {
     color: #88bfff;
     background-color: #ffffffc5;
@@ -55,25 +54,11 @@ nav a:hover {
 
 .nav-bottom {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-    padding-bottom: 3px;
-    font-size: 12px;
-    width: 100%;
+    padding-bottom: 16px;
 }
-
-.nav-bottom .menu-item{
-    display: flex;
-    align-items: center;
-
-}
-
-.nav-bottom .icon {
-    font-size: 12px;
-}
-
 
 main {
     margin-left: 220px;
@@ -81,7 +66,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-
+    
 }
 
 .user_pannel {
@@ -95,11 +80,16 @@ main {
 .user_list_section,
 .register_section,
 .company_data {
-    background-color: rgba(255, 255, 255, 0.432);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082); 
 }
+.register_section label {
+    font-weight: bold;
+    color: #555;
+}
+
 
 table {
     width: 100%;
@@ -117,14 +107,14 @@ footer {
     padding: 16px;
     background-color: #88bfffa6;
     width: 100%;
-    z-index: 0;
+    z-index: 0  ;
 }
 
 /*TODO: falta estilos al form*/
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     padding: 16px;
     background-color: rgba(255, 255, 255, 0.432);
     border-radius: 10px;
@@ -132,17 +122,40 @@ form {
 
 }
 
+input {
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 6px;
+    background-color: #88bfff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #4b98e0;
+    color: #fff;
+    font-weight: bold;
+}
+
+
 /*TODO: falta el responsive terminar*/
 @media screen and (max-width: 1000px) {
     nav {
         display: none;
     }
-
     main {
         margin-left: 0px;
         padding: 24px;
     }
-
     .user_pannel {
         flex-direction: column;
         gap: 32px;

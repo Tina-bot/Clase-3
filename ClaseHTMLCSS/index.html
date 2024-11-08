@@ -17,31 +17,19 @@
             <span class="icon">⭐️</span>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Mi Perfil</a></li>
-                <li><a href="#">Detalles de Empresa</a></li>
                 <li><a href="#">Detalles de Proveedores</a></li>
+                <li><a href="#">Detalles de Empresa</a></li>
                 <li><a href="#">Reportes Analiticos</a></li>
             </ul>
 
 
             <div class="nav-bottom">
-                <div class="menu-item">
-                    <span class="icon">👋</span>
-                    <a href="#login">Iniciar Sesión</a>
-                </div>
-                <div class="menu-item">
-                    <span class="icon">🚪</span>
-                    <a href="#logout">Cerrar Sesión</a>
-                </div>
-                <div class="menu-item">
-                    <span class="icon">📝</span>
-                    <a href="#login">Registrarse</a>
-                </div>
-                <div class="menu-item">
-                    <span class="icon">💬</span>
-                    <a href="#contact">Soporte</a>
-                </div>
-
+                <span class="icon">💬</span>
+                <a href="#contact">Soporte</a>
+                <span class="icon">🚪</span>
+                <a href="#logout">Cerrar Sesión</a>
+                <span class="icon">👋</span>
+                <a href="./pages/login.html">Iniciar Sesión</a>
             </div>
         </nav>
     </header>
@@ -96,9 +84,8 @@
                         <option value="vendedor">Vendedor</option>
                         <option value="insumos" selected>Insumos</option>
                     </select>
-                    <label for="phone">Telefono
-                    <small><i>(4xxx-xxxx)</i></small></label>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{4}" placeholder="Ingresar el telefono" required>
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Ingresar el telefono" required>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Ingresar el email" required>
                     <button type="submit">Registrar</button>
