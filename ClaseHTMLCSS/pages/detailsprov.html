@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Base de datos de finanzas para Empresas">
-    <title>Detalles de Proovedores | EmpresaPrueba</title>
+    <meta name="description" content="Página de Proveedores para EmpresaPrueba">
+    <title>Proveedores | EmpresaPrueba</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icono.png">
     <link rel="stylesheet" href="../css/style.css">
-</head>
 
+</head>
 <body>
     <header>
         <nav id="nav">
@@ -36,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="detailsprov.html">
+                    <a href="detailsprov.html" class="active">
                         <img src="https://www.svgrepo.com/show/375020/people.svg" width="15px" />
                         Proveedores
                     </a>
@@ -58,15 +57,15 @@
             <div class="nav-bottom">
                 <div class="menu-item">
                     <span class="icon">🚀</span>
-                    <a href="./pages/login.html">Iniciar Sesión</a>
+                    <a href="login.html">Iniciar Sesión</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">🚪</span>
-                    <a href="./pages/404.html">Cerrar Sesión</a>
+                    <a href="404.html">Cerrar Sesión</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">📝</span>
-                    <a href="#login">Registrarse</a>
+                    <a href="register.html">Registrarse</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">💬</span>
@@ -74,7 +73,78 @@
                 </div>
         </nav>
     </header>
+
     <main>
-        <h1>Este es tu panel de proveedores, {user_name} 👋🏻</h1>
-        <p>por ahora ta vacio</p>
+        <div class="container">
+            <h1>Este es tu panel tu proveedores, {user_name} 👋🏻</h1>
+
+    
+        <div class="providers-grid">
+            <div class="card">
+                <h2>Listado de Proveedores</h2>
+                <table aria-label="Lista de proveedores">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Rubro</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Pago Pendiente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>Insumos</td>
+                            <td>123-456</td>
+                            <td>lorem@example.com</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Ipsum</td>
+                            <td>Vendedor</td>
+                            <td>425-496</td>
+                            <td>ipsum@example.com</td>
+                            <td>$224.500</td>
+                        </tr>
+                        <tr>
+                            <td>Dolor</td>
+                            <td>Insumos</td>
+                            <td>123-456</td>
+                            <td>dolor@example.com</td>
+                            <td>$10.400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card">
+                <h2>Registrar Nuevo</h2>
+                <form action="#" method="POST" aria-label="Formulario de Registro de Proveedor">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Ingresar el nombre" required>
+                    </div>
+                    <div>
+                        <label for="rubro">Rubro</label>
+                        <select id="rubro" name="rubro">
+                            <option value="vendedor">Vendedor</option>
+                            <option value="insumos" selected>Insumos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ingresar el teléfono" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresar el email" required>
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        
+        </div>
+        </div>
     </main>
+</body>
+</html>

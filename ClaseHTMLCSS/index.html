@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +29,7 @@
                 </svg> </span>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#" class="active">
                         <img src="https://www.svgrepo.com/show/459977/home-alt-3.svg" width="15px" />
                         Inicio
                     </a>
@@ -66,7 +65,7 @@
                 </div>
                 <div class="menu-item">
                     <span class="icon">📝</span>
-                    <a href="#login">Registrarse</a>
+                    <a href="./pages/register.html">Registrarse</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">💬</span>
@@ -75,11 +74,42 @@
         </nav>
     </header>
     <main>
-        <h1>Bienvenido, {user_name} 👋🏻</h1>
-        <section class="user_pannel">
-            <article class="user_list_section" id="list">
+   
+
+        <div class="container">
+            <h1>Bienvenido, {user_name} 👋🏻</h1>
+            <div class="bento-grid">
+                <div class="card">
+                <div class="metric">24</div>
+                <div class="label">Total Proveedores</div>
+                <div class="trend trend-up">↑ 12% vs mes anterior</div>
+            </div>
+            <div class="card">
+                <div class="metric">$234.900</div>
+                <div class="label">Pagos Pendientes</div>
+                <div class="trend trend-down">↓ 8% vs mes anterior</div>
+            </div>
+            <div class="card">
+                <div class="metric">18</div>
+                <div class="label">Proveedores Activos</div>
+                <div class="trend trend-up">↑ 5% vs mes anterior</div>
+            </div>
+            <div class="card">
+                <div class="metric">$45.600</div>
+                <div class="label">Último Pago</div>
+                <div class="trend">Hace 2 días</div>
+            </div>
+            <div class="card card-half">
+                <h2>Estado Financiero</h2>
+                <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/62a2d66b-8435-4e41-8df9-262db165ed79/NPL+and+Reserves+combo+chart.png" width="85%" height="75%" />
+            </div>
+            <div class="card card-half">
+                <h2>Gastos Mensuales</h2>
+                <img src="https://www.jaspersoft.com/content/dam/jaspersoft/images/graphics/infographics/line-chart-example.svg" width="120%" />
+            </div>
+            <div class="card card-full">
                 <h2>Listado de Proveedores</h2>
-                <table aria-label="Lista de proveedores">
+                <table>
                     <thead>
                         <tr>
                             <th>Nombre</th>
@@ -94,58 +124,31 @@
                             <td>Lorem</td>
                             <td>Insumos</td>
                             <td>123-456</td>
-                            <td>lorem12@gmail.com</td>
+                            <td>lorem@example.com</td>
                             <td>No</td>
                         </tr>
                         <tr>
                             <td>Ipsum</td>
                             <td>Vendedor</td>
                             <td>425-496</td>
-                            <td>ipsumo@gmail.com</td>
+                            <td>ipsum@example.com</td>
                             <td>$224.500</td>
                         </tr>
                         <tr>
                             <td>Dolor</td>
                             <td>Insumos</td>
                             <td>123-456</td>
-                            <td>dplor@gmail.com</td>
+                            <td>dolor@example.com</td>
                             <td>$10.400</td>
                         </tr>
                     </tbody>
                 </table>
-            </article>
-            <article class="register_section" id="register">
-                <h2>Registrar Nuevo </h2>
-                <!--TODO: faltan estilos todavia al form -->
-                <form action="#" method="POST" aria-label="Formulario de Registro">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Ingresar el nombre" required>
-                    <label for="rubro">Rubro</label>
-                    <select name="rubro" id="rubro">
-                        <option value="vendedor">Vendedor</option>
-                        <option value="insumos" selected>Insumos</option>
-                    </select>
-                    <label for="phone">Telefono</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Ingresar el telefono" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingresar el email" required>
-                    <button type="submit">Registrar</button>
-                </form>
-            </article>
-        </section>
-        <section id="data" class="company_data">
-            <h3>Datos de la Empresa</h3>
-            <p>Lorem ipsum dolor sit amet...</p>
-            <p>Total: $<i>234.900</i></p>
-            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg"
-                alt="mesa larga de oficina con computadoras y alrededor personas charlando entre si" width="400px"
-                height="250px">
-        </section>
-        <!-- TODO: agregar graficos circulares para representacion de los datos -->
-    </main>
+            </div>
+        </div>
+    </div>
+ </main>
     <footer>
         <small>© 2024 EmpresaPrueba. Todos los derechos reservados.</small>
     </footer>
 </body>
-
 </html>

@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="detailscompany.html">
+                    <a href="detailscompany.html" class="active">
                         <img src="https://www.svgrepo.com/show/490062/company.svg" width="15px" />
                         Mi Empresa
                     </a>
@@ -58,15 +58,15 @@
             <div class="nav-bottom">
                 <div class="menu-item">
                     <span class="icon">🚀</span>
-                    <a href="./pages/login.html">Iniciar Sesión</a>
+                    <a href="login.html">Iniciar Sesión</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">🚪</span>
-                    <a href="./pages/404.html">Cerrar Sesión</a>
+                    <a href="404.html">Cerrar Sesión</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">📝</span>
-                    <a href="#login">Registrarse</a>
+                    <a href="register.html">Registrarse</a>
                 </div>
                 <div class="menu-item">
                     <span class="icon">💬</span>
@@ -75,6 +75,42 @@
         </nav>
     </header>
     <main>
-        <h1>Este es tu panel tu empresa, {user_name} 👋🏻</h1>
-        <p>por ahora ta vacio</p>
+        <div class="container">
+            <h1>Detalles de tu empresa, {user_name} 👋🏻</h1>
+            <div class="company-grid">
+                <div class="card">
+                    <h2>Información General</h2>
+                    <ul class="info-list">
+                        <li><strong>Nombre:</strong> EmpresaPrueba S.A.</li>
+                        <li><strong>RUT:</strong> 12.345.678-9</li>
+                        <li><strong>Dirección:</strong> Calle Prueba 123, CABA</li>
+                        <li><strong>Teléfono:</strong> +54 9 1234 5678</li>
+                        <li><strong>Email:</strong> contacto@empresaprueba.com</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Datos Financieros</h2>
+                    <ul class="info-list">
+                        <li><strong>Ingresos Anuales:</strong> $1,500,000</li>
+                        <li><strong>Gastos Anuales:</strong> $1,200,000</li>
+                        <li><strong>Utilidad Neta:</strong> $300,000</li>
+                        <li><strong>ROI:</strong> 25%</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Empleados</h2>
+                    <ul class="info-list">
+                        <li><strong>Total Empleados:</strong> 50</li>
+                        <li><strong>Tiempo Completo:</strong> 40</li>
+                        <li><strong>Medio Tiempo:</strong> 10</li>
+                        <li><strong>Departamentos:</strong> Ventas, Marketing, IT, RRHH</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Rendimiento Anual</h2>
+                        <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/62a2d66b-8435-4e41-8df9-262db165ed79/NPL+and+Reserves+combo+chart.png" width="85%" height="75%" />                 
+            </div>
+        </div>
     </main>
+</body>
+</html>
