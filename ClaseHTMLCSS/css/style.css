@@ -102,7 +102,6 @@ nav ul li a.active {
     border-radius: 15px;
 
 }
-
 main {
     padding: 24px;
     display: flex;
@@ -110,23 +109,24 @@ main {
     gap: 32px;
 }
 
-.bento-grid {
+.bento-grid, .providers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+}
+
+.bento-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.providers-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
 }
 
 .container {
     max-width: 69vw;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.providers-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 24px;
-
 }
 
 .card {
@@ -155,8 +155,7 @@ table {
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #eee;
@@ -191,39 +190,29 @@ tr:hover {
     color: var(--danger-color);
 }
 
-
-form {
-    display: grid;
-    gap: 16px;
-}
-
-label {
-    font-weight: 600;
-    color: #666;
-}
-
-input,
-select {
+input, select, button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+}
+
+input, select {
+    border: 1px solid #dbdbdb;
 }
 
 button {
-    background: var(--accent-color);
-    color: white;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
     border: none;
-    padding: 10px;
-    border-radius: 6px;
     cursor: pointer;
-    font-weight: 600;
+    margin-top: 8px;
 }
 
 button:hover {
-    background: #3a7ab5;
+    background-color: #4b98e0;
 }
-
 
 footer {
     text-align: center;
@@ -247,55 +236,13 @@ footer {
     main {
         margin-left: 0;
     }
+
+    .company-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-
-/*TODO: falta estilos al form*/
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 16px;
-    width: 100%;
-
-}
-
-input {
-    padding: 5px;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-button {
-    padding: 6px;
-    background-color: #88bfff;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 8px;
-}
-
-button:hover {
-    background-color: #4b98e0;
-    color: #fff;
-    font-weight: bold;
-}
-
-
-/*TODO: falta el responsive terminar*/
 @media screen and (max-width: 1000px) {
-    nav {
-        display: none;
-    }
-
-    main {
-        margin-left: 0px;
-        padding: 24px;
-    }
-
     .user_pannel {
         flex-direction: column;
         gap: 32px;
@@ -304,7 +251,6 @@ button:hover {
 }
 
 /*404.html styles*/
-
 .error-container-body {
     display: flex;
     justify-content: center;
@@ -314,7 +260,6 @@ button:hover {
     text-align: center;
     width: 100%;
     background-color: #cadafd6b;
-
 }
 
 .error-container {
@@ -323,7 +268,6 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .error-container p {
     font-size: 18px;
@@ -342,8 +286,6 @@ button:hover {
 }
 
 /*login.html style*/
-
-
 .login-container-body {
     display: flex;
     justify-content: center;
@@ -366,7 +308,6 @@ button:hover {
     margin-bottom: 24px;
     font-weight: 700;
     color: #333;
-
 }
 
 .login-container form {
@@ -380,37 +321,9 @@ button:hover {
     color: #555;
 }
 
-.login-container form input {
-    padding: 12px;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.login-container form button {
-    padding: 12px;
-    background-color: #88bfff;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-
-}
-
-.login-container form button:hover {
-    background-color: #4b98e0;
-}
-
-.login-container form p {
-    margin-top: 16px;
-    font-size: 15px;
-}
-
 .login-container form a {
     color: #4b98e0;
     text-decoration: none;
-
 }
 
 .login-container form a:hover {
@@ -418,7 +331,6 @@ button:hover {
 }
 
 /*company.html style*/
-
 .company-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -490,30 +402,16 @@ button:hover {
     width: 100%;
 }
 
-.register-container form button {
-    padding: 12px;
-    background-color: var(--accent-color);
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.register-container form button:hover {
-    background-color: #4b98e0;
-}
-
 .register-container form p {
-    margin-top: 16px;
-    font-size: 15px;
+    font-size: 14px;
+    color: #666;
 }
 
-.register-container form a {
+.register-container form p a {
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.register-container form a:hover {
+.register-container form p a:hover {
     text-decoration: underline;
 }
