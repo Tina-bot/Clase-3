@@ -70,23 +70,38 @@
                 </div>
                 <div class="menu-item">
                     <span class="icon">💬</span>
-                    <a href="#contact">Soporte</a>
+                    <a href="support.html">Soporte</a>
                 </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <h1>Detalles de tu empresa, {user_name} 👋🏻</h1>
+            <h1>Mi Perfil 👤</h1>
             <div class="company-grid">
                 <div class="card">
-                    <h2>Información General</h2>
-                    <ul class="info-list">
-                        <li><strong>Nombre:</strong> EmpresaPrueba S.A.</li>
-                        <li><strong>RUT:</strong> 12.345.678-9</li>
-                        <li><strong>Dirección:</strong> Calle Prueba 123, CABA</li>
-                        <li><strong>Teléfono:</strong> +54 9 1234 5678</li>
-                        <li><strong>Email:</strong> contacto@empresaprueba.com</li>
-                    </ul>
+                    <h2>Información General <button class="edit-btn" title="Editar información">✏️</button></h2>
+                    <form class="info-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" value="EmpresaPrueba S.A." class="editable-input" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="rut">RUT:</label>
+                            <input type="text" id="rut" value="12.345.678-9" class="editable-input" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" value="Calle Prueba 123, CABA" class="editable-input" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" value="+54 9 1234 5678" class="editable-input" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" value="info@empresaprueba.com" class="editable-input" disabled>
+                        </div>
+                    </form>
                 </div>
                 <div class="card">
                     <h2>Datos Financieros</h2>
@@ -108,7 +123,8 @@
                 </div>
                 <div class="card">
                     <h2>Rendimiento Anual</h2>
-                        <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/62a2d66b-8435-4e41-8df9-262db165ed79/NPL+and+Reserves+combo+chart.png" width="85%" height="75%" />                 
+                    <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/62a2d66b-8435-4e41-8df9-262db165ed79/NPL+and+Reserves+combo+chart.png" alt="Gráfico de Rendimiento Anual" class="performance-chart">
+                </div>
             </div>
         </div>
     </main>
