@@ -69,82 +69,104 @@
                 </div>
                 <div class="menu-item">
                     <span class="icon">💬</span>
-                    <a href="#contact">Soporte</a>
+                    <a href="support.html">Soporte</a>
                 </div>
         </nav>
     </header>
-
     <main>
         <div class="container">
-            <h1>Este es tu panel tu proveedores, {user_name} 👋🏻</h1>
-        <div class="providers-grid">
-            <div class="card">
-                <h2>Listado de Proveedores</h2>
-                <table aria-label="Lista de proveedores">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Rubro</th>
-                            <th>Teléfono</th>
-                            <th>Email</th>
-                            <th>Pago Pendiente</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lorem</td>
-                            <td>Insumos</td>
-                            <td>123-456</td>
-                            <td>lorem@example.com</td>
-                            <td>No</td>
-                        </tr>
-                        <tr>
-                            <td>Ipsum</td>
-                            <td>Vendedor</td>
-                            <td>425-496</td>
-                            <td>ipsum@example.com</td>
-                            <td>$224.500</td>
-                        </tr>
-                        <tr>
-                            <td>Dolor</td>
-                            <td>Insumos</td>
-                            <td>123-456</td>
-                            <td>dolor@example.com</td>
-                            <td>$10.400</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h1>Este es tu panel de proveedores, {user_name} 👋🏻</h1>
+                <div class="stats-grid">
+                <div class="card">
+                    <h2>Total de Proveedores</h2>
+                    <p class="metric">23</p>
+                    <p class="trend trend-up">+5% desde el mes pasado</p>
+                </div>
+                <div class="card">
+                    <h2>Pagos Pendientes</h2>
+                    <p class="metric">8</p>
+                    <p class="trend trend-down">-2% desde el mes pasado</p>
+                </div>
+                <div class="card">
+                    <h2>Proveedores Activos</h2>
+                    <p class="metric">15</p>
+                    <p class="trend trend-up">+3% este trimestre</p>
+                </div>
             </div>
-            <div class="card">
-                <h2>Registrar Nuevo</h2>
-                <form action="#" method="POST" aria-label="Formulario de Registro de Proveedor">
-                    <div>
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Ingresar el nombre" required>
-                    </div>
-                    <div>
-                        <label for="rubro">Rubro</label>
-                        <select id="rubro" name="rubro">
-                            <option value="vendedor">Vendedor</option>
-                            <option value="insumos" selected>Insumos</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ingresar el teléfono" required>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Ingresar el email" required>
-                    </div>
-                    <div>
-                        <label for="money">Importe de Pago</label>
-                            <input type="number" min="1" step="any" placeholder="$" />
-                    <button type="submit">Registrar</button>
-                </form>
+    
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar proveedor..." id="search" aria-label="Buscar Proveedor">
             </div>
-        
-        </div>
+    
+            <div class="providers-grid">
+                <div class="card">
+                    <h2>Listado de Proveedores</h2>
+                    <table aria-label="Lista de proveedores">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Rubro</th>
+                                <th>Teléfono</th>
+                                <th>Email</th>
+                                <th>Pago Pendiente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem</td>
+                                <td>Insumos</td>
+                                <td>123-456</td>
+                                <td>lorem@example.com</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Ipsum</td>
+                                <td>Vendedor</td>
+                                <td>425-496</td>
+                                <td>ipsum@example.com</td>
+                                <td>$224.500</td>
+                            </tr>
+                            <tr>
+                                <td>Dolor</td>
+                                <td>Insumos</td>
+                                <td>123-456</td>
+                                <td>dolor@example.com</td>
+                                <td>$10.400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class="card">
+                    <h2>Registrar Nuevo Proveedor</h2>
+                    <form action="#" method="POST" aria-label="Formulario de Registro de Proveedor">
+                        <div>
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Ingresar el nombre" required>
+                        </div>
+                        <div>
+                            <label for="rubro">Rubro</label>
+                            <select id="rubro" name="rubro">
+                                <option value="vendedor">Vendedor</option>
+                                <option value="insumos" selected>Insumos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ingresar el teléfono" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresar el email" required>
+                        </div>
+                        <div>
+                            <label for="money">Importe de Pago</label>
+                            <input type="number" min="1" step="any" placeholder="$">
+                        </div>
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 </body>
