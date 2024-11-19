@@ -6,6 +6,8 @@
     <meta name="description" content="Página de Proveedores para EmpresaPrueba">
     <title>Proveedores | EmpresaPrueba</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icono.png">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -13,7 +15,7 @@
 <body>
     <header>
         <nav id="nav">
-            <br>
+            
             <span class="icon">
                 <svg id="logo-78" width="175" height="40" viewBox="0 0 175 40" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +29,7 @@
                         d="M161.96 15.4409C161.899 15.4362 161.839 15.4193 161.784 15.3912C161.728 15.3632 161.679 15.3245 161.639 15.2774C161.599 15.2303 161.569 15.1758 161.55 15.1169C161.531 15.058 161.524 14.996 161.529 14.9343C161.607 14.0989 161.508 13.2563 161.238 12.4619C160.968 11.6675 160.533 10.939 159.961 10.3244C159.39 9.70976 158.695 9.22274 157.923 8.89524C157.15 8.56775 156.317 8.40717 155.478 8.42403C155.354 8.42403 155.235 8.37462 155.147 8.28665C155.059 8.19869 155.009 8.07938 155.009 7.95498C155.009 7.83058 155.059 7.71129 155.147 7.62333C155.235 7.53536 155.354 7.48594 155.478 7.48594C155.703 7.50048 155.929 7.50048 156.154 7.48594C157.82 7.30843 159.372 6.55564 160.543 5.35711C161.715 4.15858 162.431 2.58928 162.57 0.919337C162.58 0.801554 162.633 0.691688 162.72 0.611685C162.807 0.531683 162.921 0.487447 163.039 0.487826C163.101 0.492561 163.161 0.509449 163.216 0.53751C163.271 0.565571 163.32 0.604254 163.36 0.651335C163.401 0.698417 163.431 0.752963 163.45 0.811839C163.469 0.870715 163.476 0.932751 163.471 0.994386C163.393 1.82905 163.492 2.6708 163.761 3.46458C164.031 4.25835 164.465 4.98628 165.035 5.60078C165.606 6.21527 166.299 6.70249 167.07 7.03058C167.842 7.35867 168.674 7.52023 169.512 7.5047C169.636 7.5047 169.756 7.55413 169.844 7.64209C169.932 7.73005 169.981 7.84935 169.981 7.97375C169.981 8.09815 169.932 8.21746 169.844 8.30542C169.756 8.39338 169.636 8.44279 169.512 8.44279C167.73 8.47223 166.021 9.15877 164.714 10.3707C163.407 11.5826 162.593 13.2345 162.43 15.0094C162.42 15.1272 162.367 15.2371 162.28 15.3171C162.193 15.3971 162.079 15.4413 161.96 15.4409Z"
                         fill="white"></path>
                 </svg> </span>
+                <br>
             <ul>
                 <li>
                     <a href="../index.html">
@@ -38,6 +41,12 @@
                     <a href="detailsprov.html" class="active">
                         <img src="https://www.svgrepo.com/show/375020/people.svg" width="15px" />
                         Proveedores
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html" >
+                        <img src="https://www.svgrepo.com/show/421087/cash-dollar-finance.svg" width="14px" />
+                        Transacciones
                     </a>
                 </li>
                 <li>
@@ -73,101 +82,152 @@
                 </div>
         </nav>
     </header>
-    <main>
+    <main class="p-4 ms-5">
         <div class="container">
-            <h1>Este es tu panel de proveedores, {user_name} 👋🏻</h1>
-                <div class="stats-grid">
-                <div class="card">
-                    <h2>Total de Proveedores</h2>
-                    <p class="metric">23</p>
-                    <p class="trend trend-up">+5% desde el mes pasado</p>
-                </div>
-                <div class="card">
-                    <h2>Pagos Pendientes</h2>
-                    <p class="metric">8</p>
-                    <p class="trend trend-down">-2% desde el mes pasado</p>
-                </div>
-                <div class="card">
-                    <h2>Proveedores Activos</h2>
-                    <p class="metric">15</p>
-                    <p class="trend trend-up">+3% este trimestre</p>
+            <h1 class="mb-2">Este es tu panel de proveedores, {user_name} 👋🏻</h1>
+            
+            <div class="row g-3 mb-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h6 class="card-title text-muted mb-0">Total de Proveedores</h6>
+                        <p class="display-6 fw-bold my-2">24</p>
+                        <p class="card-text text-success mb-0"><small>+12% desde el mes pasado</small></p>
+                    </div>
                 </div>
             </div>
-    
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar proveedor..." id="search" aria-label="Buscar Proveedor">
-            </div>
-    
-            <div class="providers-grid">
-                <div class="card">
-                    <h2>Listado de Proveedores</h2>
-                    <table aria-label="Lista de proveedores">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Rubro</th>
-                                <th>Teléfono</th>
-                                <th>Email</th>
-                                <th>Pago Pendiente</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lorem</td>
-                                <td>Insumos</td>
-                                <td>123-456</td>
-                                <td>lorem@example.com</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <td>Ipsum</td>
-                                <td>Vendedor</td>
-                                <td>425-496</td>
-                                <td>ipsum@example.com</td>
-                                <td>$224.500</td>
-                            </tr>
-                            <tr>
-                                <td>Dolor</td>
-                                <td>Insumos</td>
-                                <td>123-456</td>
-                                <td>dolor@example.com</td>
-                                <td>$10.400</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h6 class="card-title text-muted mb-0">Pagos Pendientes</h6>
+                        <p class="display-6 fw-bold my-2">8</p>
+                        <p class="card-text text-danger mb-0"><small>-8% desde el mes pasado</small></p>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h6 class="card-title text-muted mb-0">Proveedores Activos</h6>
+                        <p class="display-6 fw-bold my-2">18</p>
+                        <p class="card-text text-success mb-0"><small>+5% este trimestre</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h6 class="card-title text-muted mb-0">Último Pago</h6>
+                        <p class="display-6 fw-bold my-2">$45.600</p>
+                        <p class="card-text mb-0"><small>Hace 2 días</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-                <div class="card">
-                    <h2>Registrar Nuevo Proveedor</h2>
-                    <form action="#" method="POST" aria-label="Formulario de Registro de Proveedor">
-                        <div>
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" placeholder="Ingresar el nombre" required>
+        <div class="input-group mb-4">
+            <input type="text" class="form-control" placeholder="Buscar proveedor..." id="search" aria-label="Buscar Proveedor">
+        </div>
+    
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Listado de Proveedores</h5>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Rubro</th>
+                                        <th>Teléfono</th>
+                                        <th>Email</th>
+                                        <th>Pago Pendiente</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lorem</td>
+                                        <td>Insumos</td>
+                                        <td>123-456</td>
+                                        <td>lorem@example.com</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ipsum</td>
+                                        <td>Vendedor</td>
+                                        <td>425-496</td>
+                                        <td>ipsum@example.com</td>
+                                        <td>$224.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dolor</td>
+                                        <td>Insumos</td>
+                                        <td>123-456</td>
+                                        <td>dolor@example.com</td>
+                                        <td>$10.400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ipsum</td>
+                                        <td>Vendedor</td>
+                                        <td>425-496</td>
+                                        <td>ipsum@example.com</td>
+                                        <td>$224.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LoremNet</td>
+                                        <td>Servicios</td>
+                                        <td>123-456</td>
+                                        <td>lorem@example.com</td>
+                                        <td>No</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div>
-                            <label for="rubro">Rubro</label>
-                            <select id="rubro" name="rubro">
-                                <option value="vendedor">Vendedor</option>
-                                <option value="insumos" selected>Insumos</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Ingresar el teléfono" required>
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Ingresar el email" required>
-                        </div>
-                        <div>
-                            <label for="money">Importe de Pago</label>
-                            <input type="number" min="1" step="any" placeholder="$">
-                        </div>
-                        <button type="submit">Registrar</button>
-                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Registrar Nuevo </h5>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Ingresar el nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="rubro" class="form-label">Rubro</label>
+                                <select class="form-select" id="rubro" name="rubro">
+                                    <option value="vendedor">Vendedor</option>
+                                    <option value="insumos" selected>Insumos</option>
+                                    <option value="servicios">Servicios</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ingresar el teléfono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar el email" required>
+                            </div>
+                     
+                            <button type="submit" class="btn w-100 mt-3">Registrar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <div class="bot-icon">
+        <a href="support.html" class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center">
+            <i class="fas fa-robot fa-lg"></i>
+        </a>
+    </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+    
 </body>
 </html>

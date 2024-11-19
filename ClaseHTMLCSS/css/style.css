@@ -21,6 +21,9 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 0;
 }
 
 h1 {
@@ -40,7 +43,7 @@ nav {
     left: 0;
     height: 100%;
     width: 200px;
-    z-index: 1;
+    z-index: 0;
 }
 
 nav .icon {
@@ -100,6 +103,7 @@ nav ul li a.active {
     width: calc(100% + 20px); 
    
     border-radius: 15px;
+    z-index: 0;
 
 }
 main {
@@ -120,24 +124,11 @@ main {
 }
 
 
-
 .container {
-    max-width: 69vw;
+    max-width: 70vw !important;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: var(--card-bg);
-    border-radius: var(--border-radius);
-    padding: 20px;
-    box-shadow: var(--shadow);
+    margin-right: 10em;
 }
 
 .card-full {
@@ -202,53 +193,46 @@ tr:hover {
 }
 
 
-.search-bar {
-    margin-bottom: 20px;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #dbdbdb;
-    border-radius: var(--border-radius);
-}
-
-
-.providers-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-}
-
-.providers-grid .card {
-    width: 100%;
-    padding: 20px;
-}
-
-input, select, button {
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 16px;
-    width: 100%;
-}
-
-input, select {
-    border: 1px solid #dbdbdb;
-}
 
 button {
-    background-color: var(--secondary-color);
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    margin-top: 8px;
+    background-color: var(--secondary-color) !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    border: none !important;
+    cursor: pointer !important;
+    margin-top: 8px !important;
 }
 
 button:hover {
-    background-color: #4b98e0;
+    background-color: #4b98e0 !important;
 }
+.bot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border-radius: 50%; 
+
+}
+
+.bot-icon .btn {
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color); 
+    border: none;
+}
+
+.bot-icon .btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
 
 footer {
     text-align: center;
@@ -631,4 +615,75 @@ footer {
     .contact-image {
         min-height: 200px;
     }
+}
+
+/* transactions.html style */
+
+.card-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* detailsprov.html style */
+.form-control:disabled {
+    background-color: #f8f9fa;
+    opacity: 1;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.5em 1em;
+}
+
+.badge-primary {
+    background-color: var(--accent-color) !important;
+}
+
+.badge-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.edit-btn { 
+    background: none !important; 
+    border: none !important;
+    color: var(--accent-color) !important;
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    
+}
+.edit-btn:hover {
+    color: var(--danger-color) !important;
+    background-color: transparent!important;
+    
+}
+
+.performance-chart { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+.department-badge {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    margin: 0.2em;
+    display: inline-block;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.8rem 0;
+    background: transparent;
+}
+
+/* chart.html style */
+.chart-container {
+    position: relative;
+    height: 300px;
 }

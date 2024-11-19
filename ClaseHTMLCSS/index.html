@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Base de datos de finanzas para Empresas">
     <title>Base de Datos | EmpresaPrueba</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="32x32" href="img/icono.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <nav id="nav">
-            <br>
-            <span class="icon">
+        <nav id="nav"> <span class="icon">
                 <svg id="logo-78" width="175" height="40" viewBox="0 0 175 40" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="ccustom"
@@ -27,6 +30,7 @@
                         d="M161.96 15.4409C161.899 15.4362 161.839 15.4193 161.784 15.3912C161.728 15.3632 161.679 15.3245 161.639 15.2774C161.599 15.2303 161.569 15.1758 161.55 15.1169C161.531 15.058 161.524 14.996 161.529 14.9343C161.607 14.0989 161.508 13.2563 161.238 12.4619C160.968 11.6675 160.533 10.939 159.961 10.3244C159.39 9.70976 158.695 9.22274 157.923 8.89524C157.15 8.56775 156.317 8.40717 155.478 8.42403C155.354 8.42403 155.235 8.37462 155.147 8.28665C155.059 8.19869 155.009 8.07938 155.009 7.95498C155.009 7.83058 155.059 7.71129 155.147 7.62333C155.235 7.53536 155.354 7.48594 155.478 7.48594C155.703 7.50048 155.929 7.50048 156.154 7.48594C157.82 7.30843 159.372 6.55564 160.543 5.35711C161.715 4.15858 162.431 2.58928 162.57 0.919337C162.58 0.801554 162.633 0.691688 162.72 0.611685C162.807 0.531683 162.921 0.487447 163.039 0.487826C163.101 0.492561 163.161 0.509449 163.216 0.53751C163.271 0.565571 163.32 0.604254 163.36 0.651335C163.401 0.698417 163.431 0.752963 163.45 0.811839C163.469 0.870715 163.476 0.932751 163.471 0.994386C163.393 1.82905 163.492 2.6708 163.761 3.46458C164.031 4.25835 164.465 4.98628 165.035 5.60078C165.606 6.21527 166.299 6.70249 167.07 7.03058C167.842 7.35867 168.674 7.52023 169.512 7.5047C169.636 7.5047 169.756 7.55413 169.844 7.64209C169.932 7.73005 169.981 7.84935 169.981 7.97375C169.981 8.09815 169.932 8.21746 169.844 8.30542C169.756 8.39338 169.636 8.44279 169.512 8.44279C167.73 8.47223 166.021 9.15877 164.714 10.3707C163.407 11.5826 162.593 13.2345 162.43 15.0094C162.42 15.1272 162.367 15.2371 162.28 15.3171C162.193 15.3971 162.079 15.4413 161.96 15.4409Z"
                         fill="white"></path>
                 </svg> </span>
+            <br>
             <ul>
                 <li>
                     <a href="#" class="active">
@@ -38,6 +42,12 @@
                     <a href="./pages/detailsprov.html">
                         <img src="https://www.svgrepo.com/show/375020/people.svg" width="15px" />
                         Proveedores
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/transactions.html">
+                        <img src="https://www.svgrepo.com/show/421087/cash-dollar-finance.svg" width="14px" />
+                        Transacciones
                     </a>
                 </li>
                 <li>
@@ -73,82 +83,153 @@
                 </div>
         </nav>
     </header>
-    <main>
-   
-
+    <main class="p-4 ms-5">
         <div class="container">
-            <h1>Bienvenido, {user_name} 👋🏻</h1>
-            <div class="bento-grid">
-                <div class="card">
-                <div class="metric">24</div>
-                <div class="label">Total Proveedores</div>
-                <div class="trend trend-up">↑ 12% vs mes anterior</div>
+            <h1 class="mb-4">Bienvenido, {user_name} 👋🏻</h1>
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card h-100 text-center border-0 shadow p-3 bg-white rounded">
+                        <div class="card-body text-center">
+                            <h2 class="display-7 fw-bold mb-2">24</h2>
+                            <div class="text-muted mb-2">Total Proveedores</div>
+                            <div class="text-success small">
+                                <i class="bi bi-arrow-up"></i> 12% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card h-100 text-center border-0 shadow p-3 bg-white rounded">
+                        <div class="card-body text-center">
+                            <h2 class="display-7 fw-bold mb-2">$234.900</h2>
+                            <div class="text-muted mb-2">Pagos Pendientes</div>
+                            <div class="text-danger small">
+                                <i class="bi bi-arrow-down"></i> 8% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card h-100 text-center border-0 shadow p-3 bg-white rounded">
+                        <div class="card-body text-center">
+                            <h2 class="display-7 fw-bold mb-2">18</h2>
+                            <div class="text-muted mb-2">Proveedores Activos</div>
+                            <div class="text-success small">
+                                <i class="bi bi-arrow-up"></i> 5% vs mes anterior
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card h-100 text-center border-0 shadow p-3 bg-white rounded">
+                        <div class="card-body text-center">
+                            <h2 class="display-7 fw-bold mb-2">$45.600</h2>
+                            <div class="text-muted mb-2">Último Pago</div>
+                            <div class="text-muted small">Hace 2 días</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <div class="metric">$234.900</div>
-                <div class="label">Pagos Pendientes</div>
-                <div class="trend trend-down">↓ 8% vs mes anterior</div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Estado Financiero</h5>
+                            <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/62a2d66b-8435-4e41-8df9-262db165ed79/NPL+and+Reserves+combo+chart.png"
+                                class="img-fluid" alt="Estado Financiero">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Documentos Recientes</h5>
+                            <div class="list-group">
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <i class="bi bi-file-earmark-text me-2"></i>
+                                        Factura_Lorem.pdf
+                                        <small class="d-block text-muted">Subido hace 2 días</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <i class="bi bi-file-earmark-spreadsheet me-2"></i>
+                                        Facturacion_Ipsum.xlsx
+                                        <small class="d-block text-muted">Subido hace 5 días</small>
+                                    </div>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <i class="bi bi-file-earmark-pdf me-2"></i>
+                                        Suscripcion_2024.pdf
+                                        <small class="d-block text-muted">Subido hace 1 semana</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <div class="metric">18</div>
-                <div class="label">Proveedores Activos</div>
-                <div class="trend trend-up">↑ 5% vs mes anterior</div>
-            </div>
-            <div class="card">
-                <div class="metric">$45.600</div>
-                <div class="label">Último Pago</div>
-                <div class="trend">Hace 2 días</div>
-            </div>
-            <div class="card card-half">
-                <h2>Estado Financiero</h2>
-                <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/62a2d66b-8435-4e41-8df9-262db165ed79/NPL+and+Reserves+combo+chart.png" width="85%" height="75%" />
-            </div>
-            <div class="card card-half">
-                <h2>Gastos Mensuales</h2>
-                <img src="https://www.jaspersoft.com/content/dam/jaspersoft/images/graphics/infographics/line-chart-example.svg" width="120%" />
-            </div>
-            <div class="card card-full">
-                <h2>Listado de Proveedores</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Rubro</th>
-                            <th>Teléfono</th>
-                            <th>Email</th>
-                            <th>Pago Pendiente</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lorem</td>
-                            <td>Insumos</td>
-                            <td>123-456</td>
-                            <td>lorem@example.com</td>
-                            <td>No</td>
-                        </tr>
-                        <tr>
-                            <td>Ipsum</td>
-                            <td>Vendedor</td>
-                            <td>425-496</td>
-                            <td>ipsum@example.com</td>
-                            <td>$224.500</td>
-                        </tr>
-                        <tr>
-                            <td>Dolor</td>
-                            <td>Insumos</td>
-                            <td>123-456</td>
-                            <td>dolor@example.com</td>
-                            <td>$10.400</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Proveedores Activos</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Rubro</th>
+                                    <th>Teléfono</th>
+                                    <th>Email</th>
+                                    <th>Pago Pendiente</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lorem</td>
+                                    <td>Insumos</td>
+                                    <td>123-456</td>
+                                    <td>lorem@example.com</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Ipsum</td>
+                                    <td>Vendedor</td>
+                                    <td>425-496</td>
+                                    <td>ipsum@example.com</td>
+                                    <td>$224.500</td>
+                                </tr>
+                                <tr>
+                                    <td>Dolor</td>
+                                    <td>Insumos</td>
+                                    <td>123-456</td>
+                                    <td>dolor@example.com</td>
+                                    <td>$10.400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+    </main>
+    <div class="bot-icon">
+        <a href="./pages/support.html"
+            class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center">
+            <i class="fas fa-robot fa-lg"></i>
+        </a>
     </div>
- </main>
     <footer>
         <small>© 2024 EmpresaPrueba. Todos los derechos reservados.</small>
     </footer>
 </body>
+
 </html>
