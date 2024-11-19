@@ -34,7 +34,7 @@ h1 {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 12px;
     justify-content: flex-end;
     background-color: var(--secondary-color);
@@ -55,6 +55,7 @@ nav .icon {
 nav ul {
     list-style: none;
     width: 100%;
+    padding-left: 0 !important;
 }
 
 nav a {
@@ -62,7 +63,7 @@ nav a {
     color: var(--text-color);
     padding: 8px;
     display: block;
-    text-align: center;
+    text-align: start;
     font-weight: bold;
 }
 
@@ -491,7 +492,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffffff7a;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
@@ -534,8 +535,7 @@ footer {
 }
 
 .accordion-content p {
-    font-size: 1em;
-    color: #666;
+    color: black;
     padding: 1rem 0;
 }
 
