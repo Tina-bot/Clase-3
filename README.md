@@ -1,7 +1,7 @@
 ![tumblr_a47f2d943d6e8c996173bd23f23689fb_2facf316_2048](https://github.com/user-attachments/assets/7ea03af3-6717-4233-bb2a-5b013ebf5d0e)
 
 
-## To-Do List
+## To-Do 
 
 ### Responsive
 - [ ] Terminar de hacer el responsive en las paginas.
