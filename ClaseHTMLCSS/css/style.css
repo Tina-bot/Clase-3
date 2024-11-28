@@ -1133,10 +1133,9 @@ footer {
 
 /* dark mode 
 to-fix: hay tables que no le aplican
-to-do: hovers, inputs y textos que no se leen
 */
 .dark-mode {
-    background-color: #212020;
+    background-color: #2a333a;
     color: #f1f1f1;
 }
 
@@ -1145,7 +1144,7 @@ to-do: hovers, inputs y textos que no se leen
     background-color: #333;
 }
 
-.dark-mode header nav ul li a, .dark-mode .nav-bottom .menu-item a{
+.dark-mode header nav ul li a, .dark-mode .nav-bottom .menu-item a, .dark-mode ul li{
     color: var(--text-color) !important;
 }
 
@@ -1156,7 +1155,7 @@ to-do: hovers, inputs y textos que no se leen
 .dark-mode .card,
 .dark-mode .card-with-line,
 .dark-mode .card-with-line .text-muted {
-    background-color: #333 !important;
+    background-color: #2f373d !important;
     color: #f1f1f1 !important;
 }
 
