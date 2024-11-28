@@ -1130,3 +1130,49 @@ footer {
         display: none;
     }
 }
+
+/* dark mode 
+to-fix: hay tables que no le aplican
+to-do: hovers, inputs y textos que no se leen
+*/
+.dark-mode {
+    background-color: #212020;
+    color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #333;
+}
+
+.dark-mode header nav ul li a, .dark-mode .nav-bottom .menu-item a{
+    color: var(--text-color) !important;
+}
+
+.dark-mode header nav ul li a.active {
+    color: var(--secondary-color) !important;
+}
+
+.dark-mode .card,
+.dark-mode .card-with-line,
+.dark-mode .card-with-line .text-muted {
+    background-color: #333 !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode a,
+.dark-mode small {
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .table-responsive table {
+    background-color: #212020 !important;
+}
+.dark-mode .table-responsive table tr th{
+    color: #333 ;
+}

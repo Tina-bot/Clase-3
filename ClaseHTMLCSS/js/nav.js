@@ -142,13 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </ul>
                 </div>
                 <div class="position-relative">
-                    <a class="text-dark inline-style-8" href="#">
+                    <button class="text-dark inline-style-8" onClick="switchTheme()" id="mode-toggle">
                         <i class="fa-solid fa-moon">
                         </i>
-                        <span class="visually-hidden">
-                            notificaciones no leídas
-                        </span>
-                    </a>
+                    
+                    </button>
                 </div>
             </div>
         </nav>
@@ -171,4 +169,18 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.add("active");
         }
     });
+
+    document.getElementById("mode-toggle").addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const toggleButton = document.getElementById("mode-toggle");
+        toggleButton.textContent = 
+          document.body.classList.contains("dark-mode") ? "🌞" : "🌑";
+      });
+      
 });
+
+const switchTheme=()=>{
+    const body = document.querySelector("body");
+    const currentTheme = body.getAttribute("data-bs-theme");
+    body.setAttribute("data-bs-theme", currentTheme === "light" ? "dark" : "light");
+  };
