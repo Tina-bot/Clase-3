@@ -270,7 +270,7 @@ main {
     max-width: 70vw !important;
     margin: 0 auto;
     padding: 0 20px;
-    margin-right: 10em;
+    margin-right: 10%;
 }
 
 .card-bodyb {
@@ -408,20 +408,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    main {
-        margin-left: 0;
-    }
-
-    .company-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -951,6 +937,7 @@ footer {
     }
 
     .navbarb {
+        display: block;
         margin-left: 0;
         padding: 0.5rem 1rem;
         width: 100%;
@@ -1027,6 +1014,7 @@ footer {
 
 @media (max-width: 576px) {
     .navbarb {
+        display: block;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -1139,10 +1127,6 @@ to-fix: hay tables que no le aplican
     color: #f1f1f1;
 }
 
-.dark-mode header,
-.dark-mode footer {
-    background-color: #333;
-}
 
 .dark-mode header nav ul li a, .dark-mode .nav-bottom .menu-item a, .dark-mode ul li{
     color: var(--text-color) !important;
@@ -1172,6 +1156,8 @@ to-fix: hay tables que no le aplican
 .dark-mode .table-responsive table {
     background-color: #212020 !important;
 }
-.dark-mode .table-responsive table tr th{
-    color: #333 ;
+
+.dark-mode .table, .dark-mode .table thread th, .dark-mode .table thread td{
+    background-color: #212121;
+    color: #f1f1f1; 
 }

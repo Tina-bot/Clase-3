@@ -173,14 +173,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("mode-toggle").addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
         const toggleButton = document.getElementById("mode-toggle");
-        toggleButton.textContent = 
-          document.body.classList.contains("dark-mode") ? "🌞" : "🌑";
-      });
-      
+        toggleButton.innerHTML = document.body.classList.contains("dark-mode")
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+    });
 });
 
-const switchTheme=()=>{
+const switchTheme = () => {
     const body = document.querySelector("body");
     const currentTheme = body.getAttribute("data-bs-theme");
     body.setAttribute("data-bs-theme", currentTheme === "light" ? "dark" : "light");
-  };
+};
