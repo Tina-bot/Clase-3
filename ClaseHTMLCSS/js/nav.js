@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <a href="./pages/support.html">Soporte</a>
           </div>
       </div>
-       <nav class="navbarb navbar-expand-lg">
+       <nav class="navbarb" >
             <div class="container-fluid">
                 <form class="d-flex" role="search" id="search-form">
                     <input aria-label="Search" class="form-control me-2 border border-dark" placeholder="Buscar..."
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navElement.innerHTML = navContent;
 
     const currentPath = window.location.pathname;
-    const currentPage = currentPath.split("/").pop();
+    const currentPage = currentPath.split("/").pop() || "index.html";
     const basePath = currentPath.includes("/pages/") ? "../" : "./";
 
     const navLinks = navElement.querySelectorAll("a");
@@ -165,8 +165,11 @@ document.addEventListener("DOMContentLoaded", () => {
             link.setAttribute("href", basePath + link.getAttribute("href").replace("./", ""));
         }
 
-        if (link.getAttribute("href").includes(currentPage)) {
+        const linkHref = link.getAttribute("href").replace(basePath, "");
+        if (linkHref.includes(currentPage)) {
             link.classList.add("active");
+        } else {
+            link.classList.remove("active");
         }
     });
 
