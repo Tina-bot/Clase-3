@@ -87,24 +87,6 @@
 <footer>
     <small>© 2024 EmpresaPrueba. Todos los derechos reservados.</small>
 </footer>
-
-
-<script>
-    
-    const darkModeSwitch = document.getElementById('darkModeSwitch');
-    const body = document.body;
-    
-    
-    darkModeSwitch.addEventListener('change', function () {
-        if (this.checked) {
-            body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'disabled');
-        }
-    });
-    </script>
      <script src="../js/nav.js"></script>
      <script src="../js/chart.js"></script>
      <script src="../js/toggle.js"></script>
