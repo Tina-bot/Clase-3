@@ -367,7 +367,7 @@ button:hover {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     border-radius: 10px 10px 0 0;
     font-weight: bold;
 
@@ -383,7 +383,7 @@ button:hover {
 }
 
 .bot-body p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--bg-color);   
     background-color: var(--accent-color);
     padding: 0.5em;
@@ -583,7 +583,6 @@ footer {
     height: 100vh;
     margin: 0;
     background-color: var(--bg-color);
-
 }
 
 .register-container {
@@ -653,7 +652,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.384);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
@@ -708,7 +707,8 @@ footer {
 
 .contact-container {
     display: flex;
-    background-color: var(--card-bg);
+    background-color: #ffffffce;
+    border: 1px solid #00000021;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px var(--shadow);
@@ -1180,4 +1180,9 @@ to-fix: hay tables que no le aplican
 }
 .dark-mode .faq-section .accordion .accordion-item .accordion-content p {
     color: #333 !important;
+}
+
+.dark-mode .form-control:disabled {
+    background-color: #464a4e;
+    opacity: 0.5;
 }
