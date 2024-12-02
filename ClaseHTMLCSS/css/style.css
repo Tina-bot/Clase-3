@@ -363,12 +363,13 @@ button:hover {
 
 .bot-header {
     padding: 10px;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px 10px 0 0;
+    font-weight: bold;
 
 }
 .btn-close {
@@ -379,6 +380,14 @@ button:hover {
     padding: 1em;
     flex-grow: 1;
     overflow-y: hidden;
+}
+
+.bot-body p {
+    font-size: 1.1rem;
+    color: var(--bg-color);   
+    background-color: var(--accent-color);
+    padding: 0.5em;
+    border-radius: 10px;
 }
 
 .help-list a {
@@ -802,7 +811,7 @@ footer {
 }
 
 .badge-paid {
-    background-color: var(--success-color) !important;
+    background-color: #198754!important;
     color: white !important;
     width: 100%;
     align-self: center !important;
@@ -1165,7 +1174,10 @@ to-fix: hay tables que no le aplican
     color: #f1f1f1; 
 }
 
-.dark-mode .bot-body, .dark-mode .bot-footer, .dark-mode .list-group-item {
+.dark-mode .bot-body, .dark-mode .bot-footer, .dark-mode .list-group-item, .dark-mode .contact-form, .dark-mode .contact-form form label, .dark-mode .accordion {
     background-color: #2f373d;
     color: #f1f1f1;
+}
+.dark-mode .faq-section .accordion .accordion-item .accordion-content p {
+    color: #333 !important;
 }

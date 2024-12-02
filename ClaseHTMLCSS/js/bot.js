@@ -6,11 +6,11 @@ const botHTML = `
     </div>
     <div id="botContainer" class="bot-container d-none">
         <div class="bot-header">
-            <h5>Hola!🫡 En que puedo ayudarte?</h5>
+            <h4>🟢 Botcito jr. <small><i>(En linea)</i></small></h4>
             <button id="closeBot" class="btn-close" aria-label="Cerrar"></button>
         </div>
         <div class="bot-body">
-            <p>Tal vez te interese algunos de estos temas:</p>
+            <p>-Hola!👋🏻 Cómo te puedo ayudar?</p>
         </div>
         <div class="help-list">
             <a href="#" class="list-group-item list-group-item-action">
