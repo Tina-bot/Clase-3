@@ -18,10 +18,10 @@
 - [ ] Ver que los formularios funcionen bien en celular (botones feos).
 - [ ] Agregar un cargando o algo mientras el formulario se está enviando. (*Opcional*)
 
-### Dark-Mode
+### ~~Dark-Mode~~
 - [x] Ajustar por completo el dark mode en las páginas pendientes.
 - [x] Corregir las tablas que no se aplicaban en dark mode.
 - [x] Reparar títulos y colores faltantes del dark mode que desaparecian.
-- [ ] Arreglar la página de Soporte. _(New)_
+- [x] Arreglar la página de Soporte.
 
 ![tumblr_8e23a19da0818febab7776600cff8d31_4ea6a24b_1280](https://github.com/user-attachments/assets/dc5fc36c-35eb-4464-a697-dd7fba404233)
