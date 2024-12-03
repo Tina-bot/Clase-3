@@ -440,7 +440,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     background-color: var(--bg-color);
 }
@@ -494,6 +494,18 @@ footer {
 .register-container form p a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+    .register-container {
+        max-width: 90%;
+        padding: 16px;    }
+
+    main {
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
 
 /* support.html style */
 
