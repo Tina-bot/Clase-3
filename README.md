@@ -3,10 +3,11 @@
 
 ## To-Do 
 
-### Responsive
-- [ ] Terminar de hacer el responsive en las paginas.
+### ~~Responsive~~
+- [x] Terminar de hacer el responsive en las paginas.
 - [x] Esconder la barra de búsqueda en pantallas pequeñas (se ve muy chiquita y rara).
-- [ ] Ajustar el tamaño de las tarjetas y hacer que se vea bien en celular.
+- [x] Ajustar el tamaño de las tarjetas y hacer que se vea bien en celular.
+- [x] Separar navs y que sea siempre visible el horizontal en mobile.
 
 ### Chatbot
 - [x] Agregar el chatbot con js básico.
@@ -15,7 +16,7 @@
 ### Forms de Login y Registro
 - [x] Añadir validación básica con JS en los formularios de login y registro.
 - [ ] Hacer que los formularios muestren mensajes de error si algo está mal.
-- [ ] Ver que los formularios funcionen bien en celular (botones feos).
+- [x] Ver que los formularios funcionen bien en celular (botones feos).
 - [ ] Agregar un cargando o algo mientras el formulario se está enviando. (*Opcional*)
 
 ### ~~Dark-Mode~~
