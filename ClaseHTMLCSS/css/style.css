@@ -127,7 +127,7 @@ main {
 
 }
 
-.navbarb {
+#navbarb {
     position: fixed;
     top: 0;
     right: 0;
@@ -143,38 +143,38 @@ main {
 
 }
 
-.navbarb .container-fluid {
+#navbarb .container-fluid {
     display: flex;
     width: 100%;
     align-items: end;
 
 }
 
-.navbarb .container-fluid a i {
+#navbarb .container-fluid a i {
     color: var(--bg-color);
 }
 
-.navbarb form {
+#navbarb form {
     width: 40%;
     border-radius: 15px;
     background-color: rgba(24, 39, 41, 0.164);
 
 }
 
-.navbarb .ms-auto {
+#navbarb .ms-auto {
     margin-left: auto !important;
 }
 
-.navbarb button {
+#navbarb button {
     background-color: transparent !important;
     margin-top: 0 !important;
 }
 
-.navbarb button i {
+#navbarb button i {
     color: var(--text-color) !important;
 }
 
-.navbarb button:hover {
+#navbarb button:hover {
     background-color: var(--bg-color) !important;
     color: var(--text-color) !important;
     border-radius: 15px;
@@ -820,19 +820,20 @@ footer {
         display: none;
     }
 
-    nav .nav .navbarb {
-        display: block;
+    nav #navbarb {
+        display: flex;
         margin-left: 0;
         padding: 0.5rem 1rem;
         width: 100%;
         flex-wrap: wrap;
+        margin-left: 0;
     }
 
-    .navbarb form {
+    #navbarb form {
         display: none !important;
     }
 
-    .navbarb .ms-auto {
+    #navbarb .ms-auto {
         width: 100%;
         margin-top: 0.5rem;
         display: flex;
@@ -847,7 +848,8 @@ footer {
     .container {
         margin: 0;
         padding: 1rem;
-        max-width: 100%;
+        max-width: 100% !important;
+        margin-top: 2em;
     }
 
     .card {
@@ -897,12 +899,16 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .navbarb {
-        display: block;
+    #navbarb {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 0;
+        z-index: 1;
     }
-
+    main{
+        margin-top: 1em;
+    }
     .bot-icon {
         width: 50px;
         height: 50px;
@@ -916,7 +922,7 @@ footer {
         flex-direction: column;
     }
 
-    .navbarb form input {
+    #navbarb form input {
         font-size: 0.8rem;
     }
 
