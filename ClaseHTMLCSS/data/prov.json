@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Lorem",
+        "category": "Insumos",
+        "phone": "123-456",
+        "email": "lorem@example.com",
+        "pendingPayment": "No"
+    },
+    {
+        "name": "Ipsum",
+        "category": "Vendedor",
+        "phone": "425-496",
+        "email": "ipsum@example.com",
+        "pendingPayment": "$224.500"
+    },
+    {
+        "name": "Dolor",
+        "category": "Insumos",
+        "phone": "123-456",
+        "email": "dolor@example.com",
+        "pendingPayment": "$10.400"
+    },
+    {
+        "name": "Ipsum",
+        "category": "Vendedor",
+        "phone": "425-496",
+        "email": "ipsum@example.com",
+        "pendingPayment": "$224.500"
+    },
+    {
+        "name": "LoremNet",
+        "category": "Servicios",
+        "phone": "123-456",
+        "email": "lorem@example.com",
+        "pendingPayment": "No"
+    }
+]
