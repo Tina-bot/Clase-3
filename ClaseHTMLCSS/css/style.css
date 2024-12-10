@@ -131,7 +131,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     height: auto;
     flex-direction: row;
     align-items: center;
@@ -147,11 +147,10 @@ main {
     display: flex;
     width: 100%;
     align-items: end;
-
 }
 
 #navbarb .container-fluid a i {
-    color: var(--bg-color);
+    color: gainsboro;
 }
 
 #navbarb form {
@@ -738,6 +737,7 @@ footer {
 .chart-container {
     position: relative;
     height: 300px;
+    padding: 0.5em; 
 }
 
 .inline-style-0 {
@@ -916,6 +916,10 @@ footer {
 
     .bot-icon .btn {
         font-size: 0.8rem;
+    }
+
+    .chart-container {
+        height: 100%;
     }
 
     footer {

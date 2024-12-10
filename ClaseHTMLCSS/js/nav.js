@@ -60,8 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <span class="icon">💬</span>
               <a href="./pages/support.html">Soporte</a>
           </div>
-      </div>
-       <nav class="navbarb" >
+      </div> `
+
+    const navbarbContent = `
             <div class="container-fluid">
                 <form class="d-flex" role="search" id="search-form">
                     <input aria-label="Search" class="form-control me-2 border border-dark" placeholder="Buscar..."
@@ -153,7 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     const navElement = document.getElementById("nav");
+    const navbarbElement = document.getElementById("navbarb");
     navElement.innerHTML = navContent;
+    navbarbElement.innerHTML = navbarbContent;
 
     const currentPath = window.location.pathname;
     const currentPage = currentPath.split("/").pop() || "index.html";
@@ -173,17 +176,36 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    document.getElementById("mode-toggle").addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        const toggleButton = document.getElementById("mode-toggle");
-        toggleButton.innerHTML = document.body.classList.contains("dark-mode")
+    const body = document.body;
+    const themeToggleButton = document.getElementById("mode-toggle");
+
+    const savedTheme = localStorage.getItem("theme") || "light";
+
+    if (savedTheme === "dark") {
+        body.classList.add("dark-mode");
+    }
+    body.setAttribute("data-bs-theme", savedTheme);
+
+    themeToggleButton.innerHTML = savedTheme === "dark"
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+
+    themeToggleButton.addEventListener("click", () => {
+        const currentTheme = body.getAttribute("data-bs-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        body.setAttribute("data-bs-theme", newTheme);
+
+        if (newTheme === "dark") {
+            body.classList.add("dark-mode");
+        } else {
+            body.classList.remove("dark-mode");
+        }
+
+        localStorage.setItem("theme", newTheme);
+
+        themeToggleButton.innerHTML = newTheme === "dark"
             ? '<i class="fa-solid fa-sun"></i>'
             : '<i class="fa-solid fa-moon"></i>';
     });
 });
-
-const switchTheme = () => {
-    const body = document.querySelector("body");
-    const currentTheme = body.getAttribute("data-bs-theme");
-    body.setAttribute("data-bs-theme", currentTheme === "light" ? "dark" : "light");
-};
