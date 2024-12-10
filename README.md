@@ -9,11 +9,11 @@
 - [x] Ajustar el tamaño de las tarjetas y hacer que se vea bien en celular.
 - [x] Separar navs y que sea siempre visible el horizontal en mobile.
 
-### Chatbot
+### ~~Chatbot~~
 - [x] Agregar el chatbot con js básico.
-- [ ] Ver que el chatbot se vea bien en celular y su responsive.
+- [x] Ver que el chatbot se vea bien en celular y su responsive.
 
-### Forms de Login y Registro
+### Forms de Login y Registro 
 - [x] Añadir validación básica con JS en los formularios de login y registro.
 - [ ] Hacer que los formularios muestren mensajes de error si algo está mal.
 - [x] Ver que los formularios funcionen bien en celular (botones feos).
